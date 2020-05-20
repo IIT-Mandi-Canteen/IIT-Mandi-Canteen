@@ -33,10 +33,10 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">FOOD ORDER PORTAL</h2>
-                    <form action="newuser" method="POST">
+                    <form action="signup" method="POST">
                         <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="Domain">
+                                <select name="Domain" r>
                                     <option disabled="disabled" selected="selected">Domain</option>
                                     <option>Shopkeeper</option>
                                     <option>Buyer</option>
@@ -45,20 +45,20 @@
                             </div>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="UserName" name="UserName">
+                            <input class="input--style-2" type="text" placeholder="UserName" name="UserName" required>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Mobile No." name="mob_no">
+                            <input class="input--style-2" type="text" placeholder="Mobile No." name="mob_no" required>
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input class="input--style-2" type="password" placeholder="Password" name="res_code">
+                                    <input class="input--style-2" type="password" placeholder="Password" name="res_code" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input class="input--style-2" type="password" placeholder="Confirm Password" name="Conf_res_code">
+                                    <input class="input--style-2" type="password" placeholder="Confirm Password" name="Conf_res_code" required>
                                 </div>
                             </div>
                         </div>
@@ -66,6 +66,7 @@
                             <button class="btn btn--radius btn--green" type="submit">Sign Up</button>
                         </div>
                     </form>
+                    <a href="/">Login</a> 
                 </div>
             </div>
         </div>
